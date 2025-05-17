@@ -1,0 +1,11 @@
+#portfolioMap {
+    /* neem de volle breedte in van het parent element en heeft een hoogte van 250px */
+    width: 100%;
+    height: 250px;  
+}
+
+#mapP1 {
+    /* neem de volle breedte in van het parent element en heeft een hoogte van 250px */
+    height: 250px;
+    width: 100%;
+}
