@@ -1,11 +1,11 @@
 // map-omgeving.js - Toont locaties relevant voor mijn portfolio
- 
-// Initialiseer de kaart gecentreerd op Peperfabriek Antwerpen
-let map = L.map('portfolioMap').setView([51.22000, 4.40000], 15);
+
+// Initialiseer de kaart gecentreerd op de locatie van de cirkel
+let map = L.map('portfolioMap').setView([51.10523726929393, 4.366276361894496], 15); // Centreer op de locatie van de cirkel
 
 // Basislaag met OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 18
 }).addTo(map);
 
@@ -13,7 +13,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 let locations = {
 
     thuis: {
-        coords: [51.21000, 4.41000], // Vervang met je eigen coördinaten
+        coords: [51.10523726929393, 4.366276361894496], // thuis
         popup: "<b>Woonplaats</b>"
     }
 };
@@ -31,3 +31,11 @@ L.polyline(locArray, {color: '#e60005', weight: 2}).addTo(map);
 
 // Zoom level aanpassen om alle punten te zien
 map.fitBounds(locArray);
+
+// Voeg een cirkel toe om het aangegeven gebied te markeren
+L.circle([51.1053212,4.3664493], { // Coördinaten van de blauwe pijl
+    color: 'red',                  // Kleur van de cirkelrand
+    fillColor: '#f03',              // Kleur van de cirkelvulling
+    fillOpacity: 0.2,              // Transparantie van de vulling
+    radius: 150                     // Straal van de cirkel in meters
+}).addTo(map).bindPopup("Gebied Woonplaats");  // Popup met uitleg
