@@ -1,8 +1,5 @@
-/* 
- * map-omgeving.js - Toont locaties relevant voor mijn portfolio
- * Gebaseerd op AP Hogeschool voorbeeld, aangepast voor persoonlijk gebruik
- */
-
+// map-omgeving.js - Toont locaties relevant voor mijn portfolio
+ 
 // Initialiseer de kaart gecentreerd op Peperfabriek Antwerpen
 let map = L.map('portfolioMap').setView([51.22000, 4.40000], 15);
 
