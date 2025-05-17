@@ -1,0 +1,64 @@
+/* basis */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#portfolioMap { 
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+/* Project styling */
+.project-grid {
+    display: grid;
+    gap: 2rem; /* Afstand tussen projecten */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 2rem 0;
+}
+
+.project-card {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px; /* Vaste hoogte voor afbeeldingen */
+    object-fit: cover;
+}
+
+.project-card-content {
+    padding: 1.5rem;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+.project-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.project-content {
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #3498db;
+  text-decoration: underline;
+}
