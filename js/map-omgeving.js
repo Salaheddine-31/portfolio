@@ -6,7 +6,7 @@ let map = L.map('portfolioMap').setView([51.10523726929393, 4.366276361894496], 
 // Basislaag met OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 18
+    maxZoom: 16
 }).addTo(map);
 
 // Belangrijke locaties voor mijn portfolio
@@ -28,9 +28,6 @@ Object.values(locations).forEach(loc => {
 // Verbind de locaties met een lijn (optioneel)
 let locArray = Object.values(locations).map(l => l.coords);
 L.polyline(locArray, {color: '#e60005', weight: 2}).addTo(map);
-
-// Zoom level aanpassen om alle punten te zien
-map.fitBounds(locArray);
 
 // Voeg een cirkel toe om het aangegeven gebied te markeren
 L.circle([51.1053212,4.3664493], { // Coördinaten van de blauwe pijl
