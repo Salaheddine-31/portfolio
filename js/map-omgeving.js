@@ -30,9 +30,9 @@ let locArray = Object.values(locations).map(l => l.coords);
 L.polyline(locArray, {color: '#e60005', weight: 2}).addTo(map);
 
 // Voeg een cirkel toe om het aangegeven gebied te markeren
-L.circle([51.1053212,4.3664493], { // Coördinaten van de blauwe pijl
-    color: 'red',                  // Kleur van de cirkelrand
-    fillColor: '#f03',              // Kleur van de cirkelvulling
-    fillOpacity: 0.2,              // Transparantie van de vulling
-    radius: 150                     // Straal van de cirkel in meters
-}).addTo(map).bindPopup("Gebied Woonplaats");  // Popup met uitleg
+L.circle([51.1053212,4.3664493], {              // Coördinaten van de blauwe pijl
+    color: 'red',                               // Kleur van de cirkelrand
+    fillColor: '#00BFFF',                       // Kleur van de cirkelvulling
+    fillOpacity: 0.2,                           // Transparantie van de vulling
+    radius: 150                                 // Straal van de cirkel in meters
+}).addTo(map).bindPopup("Gebied Woonplaats");   // Popup met uitleg
