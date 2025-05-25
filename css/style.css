@@ -5,13 +5,10 @@ body {
 }
 
 nav {
-  background-color: #e25656;
-  color: rgb(0, 0, 0);
-  padding: 5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    background-color: #e25656;
+    padding: 20px;
+    text-align: center;
+    color: black; 
 }
 
 footer {
@@ -27,10 +24,9 @@ footer {
     border-radius: 8px;
 }
 
-.project-grid {
+.project-grid { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
     column-gap: 3rem;
     row-gap: 2rem;
     margin: 2rem 0;
@@ -50,7 +46,7 @@ footer {
 
 .project-card img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
