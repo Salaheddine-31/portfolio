@@ -3,6 +3,20 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color:#877d7d;
+}
+
+nav {
+  background-color: #e25656;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+footer {
+  background-color: #e7e73d;
+  color: black;
+  padding: 20px;
+  text-align: center;
 }
 
 #portfolioMap { 
@@ -13,9 +27,9 @@ body {
 /* Project styling */
 .project-grid {
     display: grid;
-    gap: 2rem; /* Afstand tussen projecten */
+    gap: 5rem; /* Afstand tussen projecten */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 2rem 0;
+    margin: 5rem 0;
 }
 
 .project-card {
