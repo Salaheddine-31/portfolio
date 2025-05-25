@@ -5,10 +5,13 @@ body {
 }
 
 nav {
-    background-color: #e25656;
-    padding: 20px;
-    text-align: center;
-    color: black; /* zwart blijft */
+  background-color: #e25656;
+  color: rgb(0, 0, 0);
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -27,8 +30,9 @@ footer {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    row-gap: 3rem;
+    justify-content: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
     margin: 2rem 0;
 }
 
@@ -46,7 +50,7 @@ footer {
 
 .project-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
