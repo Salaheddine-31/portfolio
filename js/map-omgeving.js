@@ -16,6 +16,7 @@ let locations = {
         coords: [51.10523726929393, 4.366276361894496], // thuis
         popup: "<b>Woonplaats</b>"
     }
+
 };
 
 // Voeg markeringen toe voor elke locatie

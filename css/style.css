@@ -1,25 +1,24 @@
-/* basis */
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color:#b9adad;
+    background-color: #302f2f;
+    color: rgb(74, 163, 181);
 }
 
 nav {
-  background-color: #e25656;
-  color: black;
-  padding: 20px;
-  text-align: center;
-}
-footer {
-  background-color: #e7e73d;
-  color: black;
-  padding: 20px;
-  text-align: center;
+    background-color: #e25656;
+    padding: 20px;
+    text-align: center;
+    color: black; /* zwart blijft */
 }
 
-#portfolioMap { 
+footer {
+    background-color: #e7e73d;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+#portfolioMap {
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -27,13 +26,14 @@ footer {
 
 .project-grid {
     display: grid;
-    gap: 5rem; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 5rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 3rem;
+    margin: 2rem 0;
 }
 
 .project-card {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -51,28 +51,28 @@ footer {
 }
 
 .project-card-content {
-    padding: 1.5rem;
+    padding: 5rem;
 }
 
 .project-card h3 {
     margin-top: 0;
     color: #2c3e50;
 }
+
 .project-title {
-  font-size: 2rem;
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 0.5rem;
+    font-size: 2rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
 }
 
 .project-content {
-  line-height: 1.6;
-  margin: 1.5rem 0;
+    margin: 1.5rem 0;
 }
 
 .back-link {
-  display: inline-block;
-  margin-top: 2rem;
-  color: #3498db;
-  text-decoration: underline;
+    display: inline-block;
+    margin-top: 2rem;
+    color: #3498db;
+    text-decoration: underline;
 }
